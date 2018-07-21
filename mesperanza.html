@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Madre Esperanza</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="80">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/01-inicio_logo_banner.png" height="70"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#familia">FAMILIA</a></li>
+                <li><a href="#juventud">JUVENTUD</a></li>
+                <li><a href="#fundacion">FUNDACIÓN</a></li>
+                <li><a href="#tarjetas">TARJETAS</a></li>
+                <li><a href="#transito">TRÁNSITO</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Container (identidad) -->
+<div id="familia" class="container-fluid backIdentity">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 style="padding-top: 40px">MADRE ESPERANZA</h2><br>
+            <h4>FAMILIA</h4>
+            <p>familia - familia - familia - familia - familia - familia - familia - familia - familia - familia - familia </p>
+            <br>
+            <a href="index.html#madre-esperanza"><button class="btn boton btn-lg">Volver</button></a>
+    </div>
+</div>
+
+    <div id="juventud" class="container-fluid backIdentity">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2 style="padding-top: 40px">JUVENTUD</h2><br>
+                <p>-JUVENTUD-JUVENTUDJUVENTUDJUVENTUDJUVENTUDJUVENTUDJUVENTUDJUVENTUDJUVENTUD</p>
+                <br>
+                <a href="index.html#madre-esperanza"><button class="btn boton btn-lg">Volver</button></a>
+            </div>
+        </div>
+
+
+        <div id="fundacion" class="container-fluid backIdentity">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2 style="padding-top: 40px">FUNDACION</h2><br>
+                    <p>fundacion - fundacion - fundacion - fundacion - fundacion - fundacion - fundacion - fundacion</p>
+                    <a href="index.html#madre-esperanza"><button class="btn boton btn-lg">Volver</button></a>
+                    <br>
+             </div>
+            </div>
+
+
+            <div id="tarjetas" class="container-fluid backIdentity">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2 style="padding-top: 40px">TARJETAS</h2><br>
+                        <p>tarjetas - tarjetas - tarjetas - tarjetas - tarjetas - tarjetas - tarjetas - tarjetas - tarjetas - tarjetas</p>
+                        <br>
+                        <a href="index.html#madre-esperanza"><button class="btn boton btn-lg">Volver</button></a>
+                    </div>
+                </div>
+
+                <div id="transito" class="container-fluid backIdentity">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2 style="padding-top: 40px">TRANSITO</h2><br>
+                            <p>transito - transito - transito - transito - transito - transito - transito - transito - transito - transito - transito - transito</p>
+                            <br>
+                            <a href="index.html#madre-esperanza"><button class="btn boton btn-lg">Volver</button></a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Misioneras del Pilar</a></p>
+</footer>
+
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+
+</body>
+</html>
