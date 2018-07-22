@@ -30,12 +30,12 @@ p{
 
 .inicio_txtMarquee{
     font-size: 50px;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.2);
     text-align: justify;
   }
 
 .inicio_txtTitulo {
-    padding-top: 300px;
+    padding-top: 320px;
     font-size: 19px;
     line-height: 1.375em;
     color: #ffffff;
@@ -69,6 +69,7 @@ p{
 }
 
 
+/*background_index*/
 
 .backInicio {
     background-image: url("../images/01-inicio_back.jpg");
@@ -81,14 +82,14 @@ p{
 
 }
 
-.backIdentity {
+.backIdentidad {
     background-image: url("../images/01-identidad_back.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
 
 }
-.backWorld {
+.backPresencia {
     background-image: url("../images/01-presencia_back.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -105,7 +106,7 @@ p{
 }
 
 
-.backMadreEsperanza {
+.backIndexMadreEsperanza {
     background-image: url("../images/01-mEsper_back.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -113,14 +114,112 @@ p{
 
 }
 
+
+.backContacto {
+    background-image: url("../images/01-contacto_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
 .backEspiritualidad {
+    background-image: url("../images/04-espiritualidad_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size:100%;
+
+}
+
+
+.backMadreEsperanza {
+    background-image: url("../images/02-mesperanza_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+
+}
+
+.backTransito {
+    background-image: url("../images/02-transito_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+
+}
+
+.backHermanas {
+    background-image: url("../images/03-hermanas_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
+
+.backEspiritualidadIndex {
     background-image: url("../images/01-espirit_back.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
+}
+.backMisionEsp {
+    background-image: url("../images/04-misionesp_back.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.backCalendario {
+    background-image: url("../images/04-calendario_back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
+.tarjeta{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    margin: 30px;
+    background:#f4ec0026;
+}
+
+
+.cartaTransito{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    margin: 30px;
+    padding: 50px;
+    background:#b3e6ff6b;
+}
+
+.btnInfo{
+    background-color: rgba(255,255,255,0.2);
+    color: black;
+    border-color: #c6c8ca;
+    width:300px;
 
 }
 
+.btnInfo:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.infoCalendario{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #3f3f3f;
+
+}
 
 
 .container-fluid {
@@ -217,12 +316,40 @@ p{
     border-color: transparent;
     color: #fff !important;
 }
+
+.navbar_mEsp {
+    margin-bottom: 0;
+    background-color: #39005d;
+    z-index: 9999;
+    border: 0;
+    font-size: 10px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+.navbar_mEsp li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar_mEsp li a:hover, li.active a {
+    color: #fff !important;
+    background-color: #1d0021 !important;
+}
+.navbar_mEsp .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+
+
+
+
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: #f4511e;
 }
-.slideanim {visibility:hidden;}
+
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
@@ -270,7 +397,6 @@ footer .glyphicon {
 }
 
 
-
 .boton{
     background-color: rgba(255,255,255,0.2);
     color: black;
@@ -283,7 +409,41 @@ footer .glyphicon {
     background-color: rgba(255,255,255,0.5);
 }
 
+
+
+
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.imsl{
+    height: 324px;
+    width: 450px;
+}
+
+
+
 /*
+
+
+
 .slide{
     border: .5em solid #ed9ce3;
     width: 600px;
@@ -305,7 +465,6 @@ footer .glyphicon {
 }
 
 */
-
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
