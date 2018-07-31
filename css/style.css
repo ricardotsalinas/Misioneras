@@ -149,13 +149,12 @@ p{
 
 }
 
-.backHermanas {
+.backHermanas{
     background-image: url("../images/03-hermanas_back.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
 }
-
 
 
 .backEspiritualidadIndex {
@@ -313,29 +312,6 @@ p{
     background-color: #cc0b00 !important;
 }
 .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-}
-
-.navbar_mEsp {
-    margin-bottom: 0;
-    background-color: #39005d;
-    z-index: 9999;
-    border: 0;
-    font-size: 10px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-}
-.navbar_mEsp li a, .navbar .navbar-brand {
-    color: #fff !important;
-}
-.navbar_mEsp li a:hover, li.active a {
-    color: #fff !important;
-    background-color: #1d0021 !important;
-}
-.navbar_mEsp .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
 }
