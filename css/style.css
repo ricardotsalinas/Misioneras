@@ -29,13 +29,18 @@ p{
 
 
 .inicio_txtMarquee{
-    font-size: 50px;
-    color: rgba(255,255,255,0.2);
+    font-size: 60px;
+    color: rgb(255,255,255);
     text-align: justify;
   }
 
+.inicio_txtMarquee-xs{
+    font-size: 40px;
+    color: rgb(255,255,255);
+    text-align: justify;
+}
 .inicio_txtTitulo {
-    padding-top: 320px;
+    margin-top: 320px;
     font-size: 19px;
     line-height: 1.375em;
     color: #ffffff;
@@ -43,6 +48,18 @@ p{
     font-style: italic;
     text-align: justify;
 }
+
+.inicio_txtTitulo-xs {
+    background-color: rgba(79, 5, 78, 0.31);
+    margin-top: 320px;
+    font-size: 18px;
+    line-height: 1.375em;
+    color: #ffffff;
+    font-weight: 200;
+    font-style: normal;
+    text-align: justify;
+}
+
 .txtGrey {
     text-align: justify;
     color: #4e555b;
@@ -71,36 +88,44 @@ p{
 
 /*background_index*/
 
-.backInicio {
-    background-image: url("../images/01-inicio_back.jpg");
+.backgr{
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+
+.backInicio {
+    background-image: url("../images/01-inicio_back.jpg");
     background-color: #561500;
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
+    background-size: cover;
+}
 
+
+.backInicio-xs {
+    background-image: url("../images/01-inicio_back-xs.jpg");
+    background-color: #561500;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    background-size: cover;
 }
 
 .backIdentidad {
     background-image: url("../images/01-identidad_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
+    background-size: cover;
 
 }
 .backPresencia {
     background-image: url("../images/01-presencia_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: right;
 
 }
 
 .backMision {
     background-color: #290d00;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: right;
 
 }
@@ -108,72 +133,54 @@ p{
 
 .backIndexMadreEsperanza {
     background-image: url("../images/01-mEsper_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
+    background-size: cover;
 
 }
 
 
 .backContacto {
-    background-image: url("../images/01-contacto_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    background-color: #c6c8ca;
+    background-size: cover;
 }
 
 
 .backEspiritualidad {
     background-image: url("../images/04-espiritualidad_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: right;
-    background-size:100%;
+    background-size:cover;
 
 }
 
 
 .backMadreEsperanza {
     background-image: url("../images/02-mesperanza_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100%;
+    background-size:cover;
 
 }
 
 .backTransito {
     background-image: url("../images/02-transito_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100%;
+    background-size:cover;
 
 }
 
 .backHermanas{
     background-image: url("../images/03-hermanas_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 
 
 .backEspiritualidadIndex {
     background-image: url("../images/01-espirit_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: right;
 }
 .backMisionEsp {
     background-image: url("../images/04-misionesp_back.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 .backCalendario {
     background-image: url("../images/04-calendario_back.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 
 
@@ -192,8 +199,8 @@ p{
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px solid #000000;
-    margin: 30px;
-    padding: 50px;
+    margin-top: 30px;
+    padding: 20px;
     background:#b3e6ff6b;
 }
 
@@ -201,7 +208,9 @@ p{
     background-color: rgba(255,255,255,0.2);
     color: black;
     border-color: #c6c8ca;
-    width:300px;
+    width:280px;
+
+
 
 }
 
@@ -224,6 +233,12 @@ p{
 .container-fluid {
     padding: 60px 50px;
 }
+
+.container-fluid-sm{
+    padding: 10px 10px;
+}
+
+
 .bg-grey {
     background-color: #f6f6f6;
 }
@@ -300,7 +315,7 @@ p{
     border: 0;
     font-size: 10px !important;
     line-height: 1.42857143 !important;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
 }
@@ -360,7 +375,11 @@ footer .glyphicon {
     }
     .btn-lg {
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
+    }
+    .btn-xs {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -368,16 +387,16 @@ footer .glyphicon {
         font-size: 150px;
     }
 }
-.row{
-    height: 350px;
-}
 
 
 .boton{
     background-color: rgba(255,255,255,0.2);
     color: black;
     border-color: #c6c8ca;
-    width:250px;
+    font-size: medium;
+    width:220px;
+    margin-top: 10px;
+
 
 }
 
@@ -416,32 +435,6 @@ footer .glyphicon {
 
 
 
-/*
-
-
-
-.slide{
-    border: .5em solid #ed9ce3;
-    width: 600px;
-    height: 300px;
-    margin: 2% auto;
-    border-radius: .5em;
-    box-shadow: 10px 10px 5px #888;
-    position: relative;
-}
-
-.slide imag{
-    width: 600px;
-    height: 300px;
-    position: absolute;
-}
-
-.slide .img2, .slide .img3 {
-    display: none;
-}
-
-*/
-
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #0026f4;
@@ -479,4 +472,13 @@ footer .glyphicon {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+
+/*linea vertical*/
+.lv {
+    border-left: 1px solid grey;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
 }

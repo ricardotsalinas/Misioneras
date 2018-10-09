@@ -26,7 +26,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="images/01-inicio_logo_banner.png" height="70"/></a>
+            <a class="navbar-brand" href="#myPage">
+                <div class="hidden-xs"><img src="images/01-inicio_logo_banner.png" height="70"></div>
+            </a>
+            <div class="hidden-lg"><img src="images/01-inicio_logo_banner_xs.png" width="60%"></div>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
@@ -46,10 +49,10 @@
 
 
 <!-- Container (familia) -->
-<div id="familia" class="container-fluid backMadreEsperanza">
+<div id="familia" class="container-fluid container-fluid-sm backMadreEsperanza backgr">
     <div class="row">
         <div class="col-sm-12 ">
-            <h1 style="padding-top: 40px">MADRE ESPERANZA VITALES OTÍN</h1>
+            <h1 style="padding-top: 40px; text-align: center">MADRE ESPERANZA VITALES OTÍN</h1>
                 <div class="col-sm-3" >
                     <img src="images/02-familia_foto.jpg" width="90%"   style="padding-top: 20px"/>
                 </div>
@@ -73,16 +76,19 @@
                 Desde que tuvo uso de razón quiso ser religiosa, para ser toda de Dios. Buscaba glorificar a Dios y unida a Jesús salvar a los hombres. “Desde siempre, antes de ir a la escuela me tenía por hija de Dios... más que de mis padres”...
                 Cuando fue a la escuela comenzó su preparación para la Primera Comunión. Después sería ella quien diera el catecismo en la Parroquia.</p>
         </div>
-        <div class="col-sm-3" >
+        <div class="col-sm-3 hidden-xs" >
             <img src="images/02-familia_casas.jpg" height="270" width="360" style="padding-top: 20px"/>
         </div>
+            <div class="col-sm-3 hidden-lg hidden-sm" >
+                <img src="images/02-familia_casas.jpg" width="100%" />
+            </div>
         </div>
      </div>
 </div>
 
 <!-- Container (juventud) -->
 
-<div id="juventud" class="container-fluid bg-grey backMadreEsperanza" style="padding-top: 100px">
+<div id="juventud" class="container-fluid bg-grey backMadreEsperanza backgr" style="padding-top: 70px; ">
     <div class="row">
        <div class="col-sm-4">
             <h2>Juventud</h2>
@@ -131,22 +137,36 @@
 
 
 <!-- Container (fundacion) -->
-<div id="fundacion" class="container-fluid backMadreEsperanza">
+<div id="fundacion" class="container-fluid backMadreEsperanza backgr">
+    <h2 style="padding-top: 10px; padding-left: 25%" >Fundación</h2>
+
     <div class="row">
-        <div class="col-sm-3">
-            <div style="padding-top: 150px">
+        <div class="col-sm-3 hidden-xs">
+            <div style="padding-top: 40px">
                 <img src="images/02-mesperanza_hist_1.jpg" height="200" width="300" style="padding: 10px"/>
                 <img src="images/02-mesperanza_hist_3.jpg" height="200" width="300" style="padding: 10px"/>
-                <img src="images/02-mesperanza_hist_4.jpg" height="200" width="300" style="padding: 10px"/>
-                <img src="images/03-Hermanas_slider1.jpg" height="200" width="300" style="padding: 10px"/>
                 <img src="images/03-Hermanas_slider2.jpg" height="200" width="300" style="padding: 10px"/>
                 <img src="images/03-Hermanas_slider3.jpg" height="200" width="300" style="padding: 10px"/>
                 <img src="images/03-Hermanas_slider4.jpg" height="200" width="300" style="padding: 10px"/>
                 <img src="images/03-Hermanas_slider5.jpg" height="200" width="300" style="padding: 10px"/>
+                <img src="images/02-mesperanza_hist_5.jpg" height="200" width="300" style="padding: 10px"/>
+                <img src="images/02-mesperanza_hist_6.jpg" height="200" width="300" style="padding: 10px"/>
             </div>
         </div>
-        <div class="col-sm-6">
-            <h2 style="padding-top: 40px">Fundación</h2>
+
+        <a href="#fotos_mesp" class="inf col-sm-6 col-xs btnInfo btn hidden-lg hidden-sm " >Ver Fotografías </a>
+        <div  id="fotos_mesp" class="col-sm-3 hidden-lg hidden-sm oculto">
+            <img src="images/02-mesperanza_hist_1.jpg" width="100%" style="padding-top: 10px"/>
+            <img src="images/02-mesperanza_hist_3.jpg" width="100%" style="padding-top: 10px"/>
+            <img src="images/03-Hermanas_slider2.jpg"  width="100%" style="padding-top: 10px"/>
+            <img src="images/03-Hermanas_slider3.jpg"  width="100%" style="padding-top: 10px"/>
+            <img src="images/03-Hermanas_slider4.jpg"  width="100%" style="padding-top: 10px"/>
+            <img src="images/03-Hermanas_slider5.jpg"  width="100%" style="padding-top: 10px"/>
+            <img src="images/02-mesperanza_hist_5.jpg" width="100%" style="padding-top: 10px"/>
+            <img src="images/02-mesperanza_hist_6.jpg" width="100%" style="padding-top: 10px"/>
+        </div>
+
+        <div class="col-sm-6 col-xs-12">
             <h3>Contexto Histórico</h3>
             <p>
                 El 18 de julio de 1936 estalla la guerra. Durante este tiempo de violencia Esperanza experimenta la represión,
@@ -215,14 +235,17 @@
         <div class="col-sm-10 txtQuoteMadreEsperanza">
             <h3>LA CONGREGACIÓN SE VA EXTENDIENDO MÁS ALLÁ DE LAS FRONTERAS DE NUESTRO PAÍS.</h3>
             <p>
+            <ul>
             <li>En 1964 se establece en Roma una comunidad ocupándose de la asistencia de enfermos.</li>
             <li>En 1965 abren otra casa en Olorón de Santa María en Francia, regentando una residencia de ancianos.</li>
             <li>En 1966 parte para América el primer grupo de hermanas con destino a Chile. Se harían cargo de unas escuelas y también de trabajo pastoral en Yumbel (Concepción).</li>
-            <li>El 22 de julio de 1970, la Congregación recibió la aprobación de la Sede Apostólica, como congregación de votos simples.</li>
+            <li>Posteriormente y en años sucesivos la Congregación va fundando nuevas casas en los siguientes países: Perú, Honduras, Salvador y la India</li>
+            <li>Con el tiempo se van abriendo más comunidades: en Perú, Honduras, Salvador y la India y nuestra presencia se va extendiendo.</li>
+        </ul>
             </p>
         </div>
     </div>
-    <div class="col-sm-10">
+    <div class="col-sm-10 col-xs-12">
     <h3>El hecho fundacional. Carisma.</h3>
     <h4 style="font-style: italic">-Germen de comunidad-</h4>
   <p>
@@ -251,12 +274,12 @@
 </div>
 
 <!-- Container (tarjetas) -->
-<div id="tarjetas" class="container-fluid backMadreEsperanza">
+<div id="tarjetas" class="container-fluid container-fluid-sm backMadreEsperanza backgr">
     <div class="row">
-        <h2 style="padding-top: 40px">Tarjetas</h2>
+        <h2 style="padding-top: 50px; padding-left:15%">Tarjetas</h2>
 
         <div class="col-sm-5 tarjeta">
-            <h3 class="text-center">Toda De Dios… Sólo De Dios… Siempre De Dios.<hr></h3>
+            <h3 class="text-center">Toda de Dios… Sólo de Dios… Siempre de Dios.<hr></h3>
             <p>T-0050</p>
             <p>Cada segundo de mi existencia, es un don que recibo de mi Dios… es su amor, su ternura su misma vida que me
             da… Dios mío, quiero utilizar todo mi ser, en amarte, en adorarte constantemente y hacer que te conozcan y
@@ -270,7 +293,7 @@
             </p>
         </div>
         <div class="col-sm-5 tarjeta">
-            <h3 class="text-center">¡Navidad Dios Con Nosotros!<hr></h3>
+            <h3 class="text-center">¡Navidad Dios con Nosotros!<hr></h3>
             <p>T-0004</p>
             <p>Dios con nosotros los hombres...! Misterio de ternura indecible...! El Verbo se encarnó, la Palabra que
                 se hace silencio...! Dios hecho Niño solo por amor...! Luz infi­nita que viene del seno del Padre...
@@ -318,10 +341,10 @@
 </div>
 
 <!-- Container (transito) -->
-<div id="transito" class="container-fluid backTransito">
-    <div class="col-sm-3">
+<div id="transito" class="container-fluid container-fluid-sm backTransito backgr">
+    <div class="col-sm-3 hidden-xs">
     </div>
-   <div class="col-sm-9 text-center">
+   <div class="col-sm-9 col-xs-12 text-center" style="padding-top: 30px">
        <h2>Tránsito</h2>
         <div class="col-sm-12">
                 <h4 class="text-center">
@@ -331,13 +354,14 @@
                 </h4>
                 <br>
         </div>
-       <div class="col-sm-12 text-center">
+       <div class="hidden-xs col-sm-12 text-center">
            <img src="images/02-transito_foto_2.jpg" height="150" width="200"/>
            <img src="images/02-transito_foto_10.jpg" height="150" width="200"/>
            <img src="images/02-transito_foto_11.jpg" height="150" width="200"/>
            <img src="images/02-transito_foto_5.jpg" height="150" width="200"/>
        </div>
-       <div class="col-sm-6" style="padding:50px">
+   <div class="hidden-xs col-sm-12" style="padding-top: 50px"></div>
+       <div class="col-sm-5 col-xs-12">
            <p>De la homilía de D. Jesús Sanz Montes, Obispo de Huesca y de Jaca en la celebración de su funeral: “Madre
            Esperanza es un trazo de Dios, que es un modo de decir que con ella ha generado una historia y un lugar
            en los que son reconocibles la huella evangélica de un mundo diferente, de un mundo más parecido a la
@@ -348,7 +372,7 @@
            la belleza con la que los hombres podrían vivir y convivir de un modo diferente.
        </p>
        </div>
-       <div class="col-sm-6" style="padding:50px">
+       <div class="col-sm-5 col-xs-12">
            <p>
                Entre la maldición del absurdo y la bendición de la belleza, estaba M. Esperanza como instrumento de Dios
            para dar comienzo en su
@@ -362,15 +386,28 @@
            a su Iglesia, ha descrito el Evangelio del Señor y ha dado origen a una historia de santidad.”
            </p>
        </div>
-
-       <div class="col-sm-12 text-center">
+       <div class="hidden-xs col-sm-12" style="padding-top: 50px"></div>
+       <div class="hidden-xs col-sm-12 text-center ">
            <img src="images/02-transito_foto_6.jpg" height="150" width="200"/>
            <img src="images/02-transito_foto_7.jpg" height="150" width="200"/>
            <img src="images/02-transito_foto_8.jpg" height="150" width="200"/>
            <img src="images/02-transito_foto_9.jpg" height="150" width="200"/>
        </div>
+       <a href="#fotos_trans" class="inf col-sm-6 col-xs btnInfo btn hidden-lg hidden-sm " >Ver Fotografías </a>
+
+       <div class="col-sm-12 text-center hidden-sm hidden-lg oculto" id="fotos_trans">
+           <img src="images/02-transito_foto_2.jpg"  width="100%" style="padding-top: 10px"/>
+           <img src="images/02-transito_foto_10.jpg" width="100%" style="padding-top: 10px"/>
+           <img src="images/02-transito_foto_11.jpg" width="100%" style="padding-top: 10px"/>
+           <img src="images/02-transito_foto_5.jpg"  width="100%" style="padding-top: 10px"/>
+           <img src="images/02-transito_foto_6.jpg"  width="100%" style="padding-top: 10px"/>
+           <img src="images/02-transito_foto_7.jpg"  width="100%" style="padding-top: 10px"/>
+           <img src="images/02-transito_foto_8.jpg"  width="100%" style="padding-top: 10px"/>
+           <img src="images/02-transito_foto_9.jpg"  width="100%" style="padding-top: 10px"/>
+       </div>
 
 
+<!--
        <div class="col-sm-12 cartaTransito">
            <h3 class="text-left"> Mis queridas hermanas Misioneras de Ntra. Sra. del Pilar:</h3>
            <p>
@@ -394,14 +431,14 @@
                Me uno entrañablemente a todas en este momento del adiós, con toda mi cercanía y cariño.<br>   </p>
 
                <p style="text-align: right; font-weight: bold">Juan Ramón Alegre Villarroya, 24 mayo 2005<p>
-       </div>
+       </div>-->
    </div>
    </div>
 
 
 
 
-<footer class="container-fluid text-center">
+<footer class="container-fluid container-fluid-sm text-center">
     <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
@@ -409,14 +446,35 @@
 </footer>
 
 <script>
+
     $(document).ready(function () {
+
+        jQuery(document).ready(function(){
+            $(".oculto").hide();
+            $(".inf").click(function(){
+                var nodo = $(this).attr("href");
+
+
+                if ($(nodo).is(":visible")){
+                    $(nodo).hide();
+                    return false;
+                }else{
+                    $(".oculto").hide("slow");
+                    $(nodo).fadeToggle("fast");
+                    return false;
+                }
+            });
+        });
+
+
+
         // Add smooth scrolling to all links in navbar + footer link
         $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
             // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
                 // Prevent default anchor click behavior
                 event.preventDefault();
-
+                $('.navbar-collapse').collapse('hide');
                 // Store hash
                 var hash = this.hash;
 
@@ -460,9 +518,17 @@
             }
             slides[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            setTimeout(showSlides, 1000); // Change image every 2 seconds
         }
+
+
+
+
+
     })
+
+
+
 
 
 
