@@ -184,6 +184,25 @@ p{
 }
 
 
+.backNoticias {
+    background-image: url("../images/03-hermanas_back.jpg");
+    padding: 100px 1px;
+    background-size: cover;
+}
+
+.backImprimir {
+    background-image: url("../images/me_back.png");
+    background-size: cover;
+
+
+}
+
+.backExperiencias {
+    background-image: url("../images/04-espiritualidad_back.jpg");
+    padding: 100px 1px;
+    background-size: cover;
+}
+
 .tarjeta{
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -481,4 +500,18 @@ footer .glyphicon {
     position: absolute;
     left: 50%;
     margin-left: -3px;
+}
+.btn-md
+{ background-color: rgba(255,255,255,0.2);
+    color: black;
+    border-color: #c6c8ca;
+    font-size: medium;
+    width:180px;
+    margin-top: 10px;
+}
+
+.txtImprimir
+{
+    color: black;
+
 }
